@@ -15,3 +15,7 @@ TABLE items
 Write a query that selects the item name and the name of its seller for each item that belongs to a seller with a rating of more than 4.
 
 <!-- Write an SQL statement that solves the problem -->
+
+SELECT I.name,S.name
+FROM seller S, items I
+WHERE I.sellerID=S.id AND S.rating>4;

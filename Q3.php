@@ -9,7 +9,14 @@ class Palindrome
 {
     public static function isPalindrome($word)
     {
-        return NULL;
+       $word=strtolower($word);
+       $rev= strrev ($word);
+         if ($word==$rev)
+           {
+            echo "true\r\n";
+           }
+         else
+           {echo "false\r\n";}
     }
 }
 

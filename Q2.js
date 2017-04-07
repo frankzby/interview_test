@@ -4,6 +4,8 @@
 
 function formatDate(userDate) {
   // format from M/D/YYYY to YYYYMMDD
+  var index = userDate.split('/');
+  var answer = index[2]+index[1]+index[0];
+  return answer;
 }
-
 console.log(formatDate("12/31/2014"));
